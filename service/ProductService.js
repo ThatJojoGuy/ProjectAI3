@@ -1,6 +1,6 @@
 'use strict';
 
-
+//teste
 /**
  * Add a new product to the store
  * 
