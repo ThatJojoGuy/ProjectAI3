@@ -405,6 +405,8 @@ paths:
         schema:
           $ref: "#/definitions/User"
       responses:
+        "400":
+          description: "email or user not valid"
         default:
           description: "successful operation"
       x-swagger-router-controller: "User"
@@ -477,7 +479,7 @@ paths:
         type: "string"
       responses:
         "200":
-          description: "successful operation"
+          description: "Welcome back :)"
           headers:
             X-Rate-Limit:
               type: "integer"
@@ -490,7 +492,7 @@ paths:
           schema:
             type: "string"
         "400":
-          description: "Invalid username/password supplied"
+          description: "Invalid username or password"
       x-swagger-router-controller: "User"
   /user/logout:
     get:
