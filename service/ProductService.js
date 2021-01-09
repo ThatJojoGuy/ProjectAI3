@@ -1,6 +1,5 @@
 'use strict';
 
-//teste
 /**
  * Add a new product to the store
  * 
@@ -10,6 +9,7 @@
  **/
 exports.addProduct = function(body) {
   return new Promise(function(resolve, reject) {
+    
     resolve();
   });
 }
